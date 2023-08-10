@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Bloodhound](https://up.htmlacademy.ru/htmlcss-individual/1/user/2329637).
-* Наставник: `Неизвестно`.
+* Студент: [Александр Нефедов](https://up.htmlacademy.ru/htmlcss-individual/1/user/2329637).
+* Наставник: [Николай Котиков].
 
 ---
 
