@@ -58,7 +58,7 @@
       </ul>
       <section class="catalog-filters">
         <h2 class="visual-hidden">Фильтры каталога гостиниц</h2>
-        <form action="#" method="get">
+        <form action="#" method="post">
           <!-- Не понимаю что и куда тут отправляется -->
           <fieldset class="infrastructure-filter">
             <legend>Инфрастуктура:</legend>
@@ -94,7 +94,7 @@
             <legend>Стоимость, ₽:</legend>
             <input type="number" name="" id="" placeholder="От" />
             <input type="number" name="" id="" placeholder="До" />
-            <button class="button" type="button">Применить</button>
+            <button class="button" type="submit">Применить</button>
             <button class="button" type="reset">Сброс</button>
             <input value="500" min="0" max="12000" step="500" type="range" />
           </fieldset>
@@ -109,15 +109,15 @@
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button">
+        <button class="button" type="button">
           <span class="visually-hidden">Показать плиткой.</span>
-        </a>
-        <a href="#" class="button">
+        </button>
+        <button class="button" type="button">
           <span class="visually-hidden">Показать слайд-шоу.</span>
-        </a>
-        <a href="#" class="button">
+        </button>
+        <button class="button" type="button">
           <span class="visually-hidden">Показать списком.</span>
-        </a>
+        </button>
         <ul class="gallery-list">
           <li class="gallery-item">
             <img src="#" alt="Фотография гостиницы." />
@@ -171,7 +171,6 @@
             <p>Звёздочки <span class="rating uppercase">рейтинг:5,0</span></p>
           </li>
         </ul>
-        <hr />
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link" href="#">1</a>
@@ -186,19 +185,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">6</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">7</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">8</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">9</a>
+            <span>...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
