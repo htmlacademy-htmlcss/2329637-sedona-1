@@ -52,13 +52,13 @@ body {
   height: 458px;
 }
 
-.email-background {
-  background-image: url(../images/Subscribe.jpg);
+.subscription-background {
+  background-image: url(../images/subscription-background.jpg);
   width: 1200px;
   height: 415px;
 }
 
-.email-background-catalog {
+.subscription-background-catalog {
   background-color: white;
   width: 1200px;
   height: 415px;
