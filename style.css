@@ -42,9 +42,9 @@ ul.navigation-list {
   vertical-align: middle;
 } */
 
-/* body {
+body {
   background-color: rgb(134, 131, 131);
-} */
+}
 
 .hero {
   background-image: url(../images/index-background.jpg);
@@ -56,4 +56,16 @@ ul.navigation-list {
   background-image: url(../images/Subscribe.jpg);
   width: 1200px;
   height: 415px;
+}
+
+.email-background-catalog {
+  background-color: white;
+  width: 1200px;
+  height: 415px;
+}
+
+.catalog-filters {
+  background-image: url(../images/background-filter.jpg);
+  width: 1200px;
+  height: 412px;
 }
