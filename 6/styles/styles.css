@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #1bc938;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #756157;
+  color: #ffffff;
+  padding: 8px 50px;
+}
+
+.button-subscribe {
+  background-color: #82B3D3;
+}
+
+.navigation-page {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.list-item a {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.breadcrumbs-item a, .breadcrumbs-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+/* как убрать рамку */
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-catalog-applay {
+  background-color: #82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 50px;
+}
+
+/* не понял как сделать кнопку прозрачной */
+.button-catalog-reset {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 50px;
+}
+
+.hotels-found {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 20px;
+}
+
+.gallery-list {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* проблема с запасным фоном блока */
+.hero {
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  background-color: #333333;
+}
+
+.container {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.reason-title, .feature-title, .search-title, .subscription-title{
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.reason h3, .feature-list h3, .gallery-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.reason p, .feature-list p, .gallery-item p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.rating {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  padding-top: 11.36px;
+  padding-bottom: 12.64px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.gallery-item-link{
+  text-decoration: none;
+}
+
+a.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* та же проблема что и сблоком hero */
+.subscription-background {
+  background-image: url(../images/subscription-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  padding: 96px 258px 104px 258px;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+/* изображение не растягивается по высоте как на макете */
+.catalog-filters {
+  background-image: url(../images/background-filter.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 35px 70px 70px 70px;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.subscription-background-catalog {
+  background-size: 100% auto;
+  text-align: center;
+  padding: 96px 258px 104px 258px;
+  background-color: white;
+}
+
+
+.uppercase {
+  text-transform: uppercase;
+}
