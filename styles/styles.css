@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #1bc938;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #756157;
+  color: #ffffff;
+  padding: 8px 50px;
+  border: none;
+}
+
+.button-select{
+  border: #000000 solid 2px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.button-subscribe {
+  background-color: #82B3D3;
+}
+
+.button-search {
+  background-color: transparent;
+}
+
+.navigation-page {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+}
+
+ .breadcrumbs-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-catalog-applay {
+  background-color: #82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 50px;
+}
+
+.button-catalog-reset {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.hotels-found {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 20px;
+}
+
+.gallery-list {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: #333333;
+}
+
+.hero-divider {
+  position:sticky;
+}
+
+.container {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.reason-title, .feature-title, .search-title, .subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.reason-subtitle, .feature-subtitle, .gallery-item-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.reason-content, .feature-content, .gallery-intem-hostel {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.rating {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.gallery-item-link {
+  text-decoration: none;
+}
+
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.subscription-background {
+  background-image: url(../images/subscription-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 96px 258px 104px 258px;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.catalog-filters {
+  background-image: url(../images/background-filter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 70px 70px 70px;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.fieldset {
+  border: none;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.subscription-background-catalog {
+  background-size: 100% auto;
+  text-align: center;
+  padding: 96px 258px 104px 258px;
+  background-color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
