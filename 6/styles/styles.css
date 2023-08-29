@@ -16,6 +16,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
@@ -30,10 +31,22 @@ body {
   background-color: #756157;
   color: #ffffff;
   padding: 8px 50px;
+  border: none;
+}
+
+.button-select{
+  border: #000000 solid 2px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px 15px;
 }
 
 .button-subscribe {
   background-color: #82B3D3;
+}
+
+.button-search {
+  background-color: transparent;
 }
 
 .navigation-page {
@@ -41,7 +54,7 @@ body {
   background-color: #ffffff;
 }
 
-.list-item a {
+.navigation-link {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -51,7 +64,7 @@ body {
   text-align: center;
 }
 
-.breadcrumbs-item a, .breadcrumbs-item {
+ .breadcrumbs-link {
   color: #ffffff;
   text-decoration: none;
   font-weight: 400;
@@ -59,7 +72,6 @@ body {
   font-size: 16px;
 }
 
-/* как убрать рамку */
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
@@ -79,11 +91,16 @@ body {
   padding: 8px 50px;
 }
 
-/* не понял как сделать кнопку прозрачной */
 .button-catalog-reset {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.button-blue {
+  background-color: #82B3D3;
 }
 
 .hotels-found {
@@ -103,13 +120,16 @@ body {
   padding: 20px;
 }
 
-/* проблема с запасным фоном блока */
 .hero {
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   text-align: center;
   background-color: #333333;
+}
+
+.hero-divider {
+  position:sticky;
 }
 
 .container {
@@ -118,17 +138,17 @@ body {
   text-align: center;
 }
 
-.reason-title, .feature-title, .search-title, .subscription-title{
+.reason-title, .feature-title, .search-title, .subscription-title {
   font-size: 30px;
   line-height: 36px;
 }
 
-.reason h3, .feature-list h3, .gallery-item h3 {
+.reason-subtitle, .feature-subtitle, .gallery-item-subtitle {
   font-size: 24px;
   line-height: 28px;
 }
 
-.reason p, .feature-list p, .gallery-item p {
+.reason-content, .feature-content, .gallery-intem-hostel {
   font-size: 18px;
   line-height: 21px;
 }
@@ -140,8 +160,8 @@ body {
 
 .pagination-link {
   text-decoration: none;
-  padding-top: 11.36px;
-  padding-bottom: 12.64px;
+  padding-top: 11px;
+  padding-bottom: 13px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -149,36 +169,38 @@ body {
   background-color: #82B3D3;
 }
 
-.gallery-item-link{
+.gallery-item-link {
   text-decoration: none;
 }
 
-a.telephone {
+.telephone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
 }
 
-/* та же проблема что и сблоком hero */
 .subscription-background {
   background-image: url(../images/subscription-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   text-align: center;
   padding: 96px 258px 104px 258px;
   color: #ffffff;
   background-color: #333333;
 }
 
-/* изображение не растягивается по высоте как на макете */
 .catalog-filters {
   background-image: url(../images/background-filter.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   padding: 35px 70px 70px 70px;
   color: #ffffff;
   background-color: #333333;
+}
+
+.fieldset {
+  border: none;
 }
 
 .catalog-title {
@@ -193,7 +215,11 @@ a.telephone {
   background-color: white;
 }
 
-
 .uppercase {
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
