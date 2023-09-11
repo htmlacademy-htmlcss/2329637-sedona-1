@@ -22,7 +22,7 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   min-height: 100%;
   font-weight: 400;
   font-size: 22px;
@@ -37,12 +37,12 @@ body {
 
 .button {
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 36px;
   font-weight: 700;
   background-color: #756157;
   color: #ffffff;
-  padding: 8px 50px;
+  padding: 8px 25px;
   border: none;
 }
 
@@ -56,6 +56,8 @@ body {
 .button-search {
   background-color: transparent;
   border: none;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .button-catalog-apply {
@@ -81,10 +83,24 @@ body {
 
 .navigation-user {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+  align-items: center;
+}
+
+.wrapper-header-navigation {
+  display: flex;
 }
 
 .navigation-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+  margin-left: 30px;
 }
 
 .header {
@@ -102,7 +118,19 @@ body {
   font-weight: 700;
   line-height: 24px;
   font-size: 20px;
-  text-align: center;
+  padding: 20px 16px;
+  display: block;
+}
+
+.navigation-link-favorites {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 /* HERO BLOCK */
@@ -114,6 +142,7 @@ body {
   text-align: center;
   background-color: #333333;
   margin-bottom: 69px;
+  padding-top: 50px;
 }
 
 .hero-divider {
@@ -161,6 +190,7 @@ body {
 
 .feature-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 96px;
   padding: 0;
@@ -184,8 +214,6 @@ body {
 .wrapper-search-title {
   margin-bottom: 96px;
 }
-
-/* FEATURES */
 
 .feature-subtitle {
   margin: 30px auto;
@@ -268,12 +296,28 @@ body {
   line-height: 23px;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 /* FIELDSET */
 
 .fieldset {
+  display: flex;
+  flex-direction: column;
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.wrapper-input-cost {
+  display: flex;
+  width: 288px;
+}
+
+.input-cost {
+  box-sizing: border-box;
+  width: 50%;
 }
 
 .wrapper-fildset-right {
@@ -289,6 +333,31 @@ body {
 }
 
 /* HOTEL GALLERY */
+
+.gallery-item-subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.gallery-item-hostel {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.wrapper-gallery-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.gallery-item-photo {
+  margin-bottom: 16px;
+}
 
 .wrapper-hotels {
   margin: 0 auto 40px;
@@ -321,13 +390,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  align-items: baseline;
   justify-content: space-between;
 }
 .gallery-item {
   width: 340px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  border: #e7e7e7 1px solid;
 }
 
 .hotel-gallery {
@@ -358,14 +429,23 @@ body {
   line-height: 28px;
 }
 
-.reason-content, .feature-content, .gallery-intem-hostel {
+.reason-content, .feature-content, .gallery-item-hostel {
   font-size: 18px;
   line-height: 21px;
 }
 
 .rating {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  margin-left: auto;
+  background-color: #d3d3d3;
+  padding: 8px 25px;
+}
+
+.stars-rating {
+  margin: 0;
+  display: flex;
 }
 
 .catalog-title {
@@ -373,6 +453,11 @@ body {
   line-height: 78px;
   margin: 0;
   margin-bottom: 8px;
+}
+
+.buttons-subscribe {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* PAGINATION */
@@ -384,16 +469,26 @@ body {
   line-height: 36px;
   color: #ffffff;
   background-color: #82B3D3;
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
   width: 1060px;
 }
 
 .pagination-item {
+  display: flex;
+  align-self: center;
   margin-right: 8px;
 }
 
@@ -402,6 +497,10 @@ body {
 }
 
 /* GALLERY ITEM LINK */
+
+.header-button {
+  margin-left: 20px;
+}
 
 .gallery-item-link {
   text-decoration: none;
