@@ -99,7 +99,7 @@ body {
 }
 
 .button-catalog-reset:focus {
-  outline-color: #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .button-catalog-reset:active {
