@@ -63,11 +63,11 @@ body {
 }
 
 .button-select:focus {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .button-select:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .button-search {
@@ -116,6 +116,7 @@ body {
 
 .button-second:focus{
   background-color: #68A2CA;
+  outline: 2px solid #83B3D3;
 }
 
 .button-second:active{
@@ -132,6 +133,7 @@ body {
 
 .button-selected:focus {
   background-color: #6C9E42;
+  outline: 2px solid #83B3D3;
 }
 
 .button-selected:active {
@@ -162,7 +164,9 @@ body {
 }
 
 .header-logo {
+  display: block;
   outline: none;
+  align-self: stretch;
 }
 
 .header-logo:hover svg {
@@ -192,7 +196,6 @@ body {
 
 .wrapper-header-navigation {
   display: flex;
-  align-items: center;
 }
 
 .navigation-list {
@@ -222,7 +225,7 @@ body {
   line-height: 24px;
   font-size: 20px;
   padding: 20px 16px;
-  display: block;
+  display: inline-block;
 }
 
 .navigation-link-favorites {
@@ -607,14 +610,6 @@ body {
   opacity: 0.6;
 }
 
-.catalog-filter-item input[type="checkbox"]:focus {
-  outline: 2px solid #83B3D3;
-}
-
-.catalog-filter-item input[type="radio"]:focus {
-  outline: 2px solid #83B3D3;
-}
-
 .catalog-filter-item:active {
   opacity: 0.3;
 }
@@ -860,6 +855,7 @@ input:focus  + .checkmark-box, input:focus  + .checkmark-circle {
 
 .button-basic:focus {
   background-color: #615048;
+  outline: 2px solid #83B3D3;
 }
 
 .button-basic:active {
@@ -954,6 +950,10 @@ input:focus  + .checkmark-box, input:focus  + .checkmark-circle {
   fill: #68A2CA;
 }
 
+.social-icon:focus {
+  outline: 2px solid #83B3D3;
+}
+
 .social-icon:active svg {
   opacity: 0.3;
 }
@@ -973,6 +973,7 @@ input:focus  + .checkmark-box, input:focus  + .checkmark-circle {
 
 .phone:focus {
   color: #756157;
+  outline: 2px solid #83B3D3;
 }
 
 .phone:active {
@@ -988,6 +989,12 @@ input:focus  + .checkmark-box, input:focus  + .checkmark-circle {
 .social-logo:focus svg {
   fill: #756157;
 }
+
+.social-logo:focus {
+  outline: 2px solid #83B3D3;
+}
+
+
 
 .social-logo:active svg {
   opacity: 0.3;
