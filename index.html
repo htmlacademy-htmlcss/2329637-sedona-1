@@ -176,7 +176,7 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="user-email">Поле ввода электронной почты</label>
+          <label class="visually-hidden" for="user-email">поле ввода электронной почты</label>
           <input class="subscribe-form-input" type="email" name="user-email" id="user-email" placeholder="Ваш E-mail" />
           <button class="button button-second buttons-subscribe" type="submit">
             <span class="uppercase">подписаться</span>
@@ -220,9 +220,31 @@
       <div class="modal">
         <form action="https://echo.htmlacademy.ru" method="post">
           <h2 class="modal-title uppercase">поиск гостиницы в седоне</h2>
-          <button class="modal-button-close" type="button"></button>
-          <label class="modal-wrapper calendar-picker">Дата Заезда:<span class="alert-content-for"></span><input class="date-input" type="text" placeholder="Укажите дату" name="date-for" required></label>
-          <label class="modal-wrapper calendar-picker" required>Дата Выезда:<span class="alert-content-to"></span><input class="date-input" type="text" placeholder="Укажите дату" name="date-to"></label>
+          <button class="modal-button-close" type="button" aria-label="закрыть модальное окно"></button>
+
+          <div class="modal-wrapper">
+            <label class="label-date-input" for="date-for">
+              Дата Заезда:
+            </label>
+            <div>
+              <div class="calendar-picker">
+                <input class="date-input" type="text" placeholder="Укажите дату" name="date-for" required id="date-for">
+              </div>
+              <span class="alert-content-for error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </div>
+
+          <div class="modal-wrapper">
+            <label class="label-date-input" for="date-to">
+              Дата Выезда:
+            </label>
+            <div>
+              <div class="calendar-picker">
+                <input class="date-input" type="text" placeholder="Укажите дату" name="date-to" required id="date-to">
+              </div>
+              <span class="alert-content-to">На эти даты есть свободные номера.Пока есть.</span>
+            </div>
+          </div>
 
           <div class="modal-wrapper">
 
@@ -230,21 +252,22 @@
               <label for="counter-people"><span class="modal-label-counter">Взрослые:</span></label>
               <div class="wrapper-modal-input-counter">
                 <input class="modal-input-counter" id="counter-people" min="1" max="9" value="1" readonly type="number" required>
-                <button class="number-minus"></button>
-                <button class="number-plus"></button>
+                <button class="number-minus" type="button" aria-label="Минус"></button>
+                <button class="number-plus" type="button" aria-label="Плюс"></button>
               </div>
             </div>
 
             <div class="counter-wrapper">
               <label for="counter-children"><span class="modal-label-counter">Дети:</span></label>
 
-              <span class="tooltip">
+              <div class="tooltip">
                 <button class="tooltip-toggle" type="button">
-                  <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="3" height="12" viewBox="0 0 3 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                     <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z" fill="inherit"/>
-                    </svg>
-                <span class="tooltip-text tooltip-close">
-                  <svg class="tooltip-text-triangle" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip">
+                  <svg class="tooltip-text-triangle" aria-hidden="true" focusable="false" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="triangle 1" clip-path="url(#clip0_47216_507)">
                     <path id="Vector" d="M9.5 0L19 9H0L9.5 0Z" fill="#333333"/>
                     </g>
@@ -256,8 +279,7 @@
                   </svg>
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                 </span>
-                </button>
-              </span>
+              </div>
 
               <div class="wrapper-modal-input-counter">
                 <input class="modal-input-counter" id="counter-children" min="0" max="9" value="0" readonly type="number" required>
