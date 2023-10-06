@@ -569,6 +569,7 @@ body {
 }
 
 .search-title-content {
+  width: 580px;
   margin: 0 auto 54px;
 
   word-break: break-word;
