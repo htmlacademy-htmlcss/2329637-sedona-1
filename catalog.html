@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="images/icon/favicon.png" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/icon/favicon.png">
   </head>
   <body>
     <header class="header">
@@ -17,6 +18,8 @@
             width="140"
             height="70"
             fill="#81B3D3"
+            role="img"
+            aria-label="Седона"
           >
             <g clip-path="url(#a)">
               <path
@@ -165,19 +168,19 @@
         >
           <div class="wrapper-fildset-left">
             <fieldset class="fieldset">
-              <legend class="catalog-filter-title">инфрастуктура:</legend>
+              <legend class="catalog-filter-title">инфраструктура:</legend>
               <label class="catalog-filter-item">
-                <input type="checkbox" name="pool" checked />
+                <input type="checkbox" name="pool" checked>
                 <span class="checkmark-box"></span>
                 Бассейн
               </label>
               <label class="catalog-filter-item">
-                <input type="checkbox" name="parking" checked />
+                <input type="checkbox" name="parking" checked>
                 <span class="checkmark-box"></span>
                 Парковка
               </label>
               <label class="catalog-filter-item">
-                <input type="checkbox" name="wi-fi" />
+                <input type="checkbox" name="wi-fi">
                 <span class="checkmark-box"></span>
                 Wi-Fi
               </label>
@@ -185,17 +188,17 @@
             <fieldset class="fieldset">
               <legend class="catalog-filter-title">тип жилья:</legend>
               <label class="catalog-filter-item">
-                <input type="radio" name="type-house" value="hotel" checked />
+                <input type="radio" name="type-house" value="hotel" checked>
                 <span class="checkmark-circle"></span>
-                Отель
+                Гостиница
               </label>
               <label class="catalog-filter-item">
-                <input type="radio" name="type-house" value="motel" />
+                <input type="radio" name="type-house" value="motel">
                 <span class="checkmark-circle"></span>
                 Мотель
               </label>
               <label class="catalog-filter-item">
-                <input type="radio" name="type-house" value="apartments" />
+                <input type="radio" name="type-house" value="apartments">
                 <span class="checkmark-circle"></span>
                 Апартаменты
               </label>
@@ -213,7 +216,7 @@
                     name="cost"
                     value="0"
                     id="from-cost"
-                  />
+                  >
                 </div>
                 <div class="wrapper-input-cost">
                   <label class="visually-hidden" for="to-cost">Цена до</label>
@@ -223,12 +226,12 @@
                     name="cost"
                     value="9000"
                     id="to-cost"
-                  />
+                  >
                 </div>
               </div>
 
               <div class="range-scale">
-                <div class="range-bar" style="left: 10px; width: 170px">
+                <div class="range-bar" style="left: 10px; width: 208px">
                   <button type="button" class="range-toggle toggle-min">
                     <span class="visually-hidden"
                       >Изменить минимальную цену.</span
@@ -264,10 +267,10 @@
           <h2 class="uppercase hotels-found">
             найдено гостиниц: <span id="number-of-hotels">38</span>
           </h2>
-          <div>
+          <div class="wrapper-button-select">
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Сначала популярные</option>
-              <option value="cheap">Сначала дешёвые</option>
+              <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
             <button class="button-select" type="button">
@@ -336,7 +339,7 @@
                 width="300"
                 height="212"
                 alt="Фотография гостиницы."
-              />
+              >
               <h3 class="gallery-item-subtitle">Amara Resort & Spa</h3>
             </a>
             <div class="wrapper-gallery-row">
@@ -411,7 +414,7 @@
                 <span class="visually-hidden">Статус отеля четыре звезды.</span>
               </p>
               <span class="rating uppercase align-center ml-auto"
-                >рейтинг:8,5</span
+                >рейтинг: 8,5</span
               >
             </div>
           </li>
@@ -424,7 +427,7 @@
                 width="300"
                 height="212"
                 alt="Фотография гостиницы."
-              />
+              >
               <h3 class="gallery-item-subtitle">Villas at Poco Diablo</h3>
             </a>
             <div class="wrapper-gallery-row">
@@ -499,7 +502,7 @@
                 <span class="visually-hidden">Статус отеля четыре звезды.</span>
               </p>
               <span class="rating uppercase align-center ml-auto"
-                >рейтинг:9,2</span
+                >рейтинг: 9,2</span
               >
             </div>
           </li>
@@ -512,7 +515,7 @@
                 width="300"
                 height="212"
                 alt="Фотография гостиницы."
-              />
+              >
               <h3 class="gallery-item-subtitle">Desert Quail Inn</h3>
             </a>
             <div class="wrapper-gallery-row">
@@ -574,7 +577,7 @@
                 <span class="visually-hidden">Статус отеля четыре звезды.</span>
               </p>
               <span class="rating uppercase align-center ml-auto"
-                >рейтинг:6,9</span
+                >рейтинг: 6,9</span
               >
             </div>
           </li>
@@ -587,8 +590,8 @@
                 width="300"
                 height="212"
                 alt="Фотография гостиницы."
-              />
-              <h3 class="gallery-item-subtitle">GreenThree Inn</h3>
+              >
+              <h3 class="gallery-item-subtitle">GreenTree Inn</h3>
             </a>
             <div class="wrapper-gallery-row">
               <p class="gallery-item-hostel">Гостиница</p>
@@ -636,7 +639,7 @@
                 <span class="visually-hidden">Статус отеля четыре звезды.</span>
               </p>
               <span class="rating uppercase align-center ml-auto"
-                >рейтинг:5,0</span
+                >рейтинг: 5,0</span
               >
             </div>
           </li>
@@ -682,8 +685,8 @@
             type="email"
             name="user-email"
             id="user-email"
-            placeholder="Ваш E-mail"
-          />
+            placeholder="Ваш e-mail"
+          >
           <button class="button buttons-subscribe button-second" type="submit">
             <span class="uppercase">подписаться</span>
           </button>
@@ -696,7 +699,7 @@
               <a
                 class="social-icon"
                 target="_blank"
-                href="https://vc.com/htmlacademy"
+                href="https://vk.com/htmlacademy"
               >
                 <span class="visually-hidden">Вконтакте</span>
                 <svg
@@ -780,6 +783,7 @@
         </div>
       </div>
     </footer>
+
     <!-- для отображения модального окна удалить класс "modal-close" -->
     <div class="modal-container modal-close">
       <div class="modal">
@@ -800,7 +804,7 @@
                   name="date-for"
                   required
                   id="date-for"
-                />
+                >
               </div>
               <span class="alert-content-for error"
                 >Мы не можем отправить вас в прошлое.</span
@@ -819,7 +823,7 @@
                   name="date-to"
                   required
                   id="date-to"
-                />
+                >
               </div>
               <span class="alert-content-to"
                 >На эти даты есть свободные номера.Пока есть.</span
@@ -842,7 +846,7 @@
                   readonly
                   type="number"
                   required
-                />
+                >
                 <button class="number-minus" type="button"></button>
                 <button class="number-plus" type="button"></button>
               </div>
@@ -885,9 +889,9 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g id="triangle 1" clip-path="url(#clip0_47216_507)">
+                    <g id="triangle-1" clip-path="url(#clip0_47216_507)">
                       <path
-                        id="Vector"
+                        id="triangle"
                         d="M9.5 0L19 9H0L9.5 0Z"
                         fill="#333333"
                       />
@@ -913,7 +917,7 @@
                   readonly
                   type="number"
                   required
-                />
+                >
                 <button class="number-minus" type="button"></button>
                 <button class="number-plus" type="button"></button>
               </div>
