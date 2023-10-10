@@ -206,6 +206,7 @@ body {
 
 .header-logo {
   position: absolute;
+  z-index: 1;
 
   display: -webkit-box;
 
@@ -389,6 +390,8 @@ body {
 /* HERO BLOCK */
 
 .hero {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -406,8 +409,8 @@ body {
 }
 
 .hero-divider {
-  line-height: 0;
-  align-self: stretch;
+  position: absolute;
+  bottom: 0;
 }
 
 /* REASON */
@@ -440,9 +443,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -495,7 +495,6 @@ body {
 }
 
 .decorative-line {
-  display: block;
   width: 60px;
   height: 2px;
   margin: 0 auto 30px;
@@ -552,7 +551,7 @@ body {
 .feature-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 230px;
   padding: 81px 85px;
@@ -580,11 +579,15 @@ body {
 }
 
 .feature-subtitle {
-  margin: 28px auto;
+  margin: 20px auto 30px;
 }
 
 .feature-content {
   margin: 0;
+}
+
+.wrapper-feature-icon {
+  min-height: 82px;
 }
 
 /* SUBSCRIPTION */
@@ -631,10 +634,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 40px 70px 30px;
 
   -webkit-box-align: center;
@@ -1887,12 +1886,19 @@ input:focus + .checkmark-circle {
 /* PHONE LINK */
 
 .phone {
-  min-width: 350px;
-
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+}
+
+.wrapper-phone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 380px;
+  margin: 0 auto;
 }
 
 .phone:hover {
@@ -1911,8 +1917,16 @@ input:focus + .checkmark-circle {
 /* SOCIAL-LOGO */
 
 .social-logo {
-  padding-top: 5px;
+  display: flex;
+}
+
+.wrapper-logo {
+  display: flex;
+  flex-wrap: wrap;
   min-width: 115px;
+  max-width: 240px;
+  flex: 0 0 auto;
+  gap: 10px;
 }
 
 .social-logo:hover svg {
